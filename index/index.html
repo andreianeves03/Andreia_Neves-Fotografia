@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+      <head>
+            <title>Andreia Neves Fotografia</title>
+            <meta name="description" content="HTML tutorial">
+           <meta name="keywords"
+content="HTML,CSS,XML,JavaScript">
+           <meta name="author" content="Andreia Neves">
+           <meta http-equiv="refresh" content="30">
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+      <!---Content starts here -->
+      <body>
+<header>
+<a id="menu_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/> </svg>
+</a>
+
+<div id="drawer">
+<nav>
+<a href="#unordered"> Portfólio </a>
+
+<a href="#ordered"> Contactos</a> 
+
+<a href="#color"> Imagens</a>
+
+<a href="#video"> Videos</a> 
+
+<a href="#table"> Table Tags</a> 
+</nav>
+</div>
+<h1>Andreia Neves Fotografia</h1>
+<p>By: Andreia Neves</p>
+<hr>
+</header>
+
+<nav id= "tabletPC" class="col-3">
+<a href="#unordered"> Portfólio</a>
+<br>
+<a href="#ordered"> Contactos</a>
+<br>
+<a href="#color"> Imagens</a>
+<br>
+<a href="#video"> Videos </a>
+<br>
+<a href="#table"> Table Tags</a>
+<br>
+
+</nav>
+
+<div id="container" class="col-9">
+<section>
+<a name="unordered"></a>
+<h2> Portfólio </h2>
+<i>Nesta página pode contar com vários serviços disponíveis, desde:</i>
+<ul>
+<li> Sessões </li>
+<li> Eventos</li>
+<li> Batizados</li>
+<li> Casamentos</li>
+<li> Festas de Aniversário</li>
+</ul>
+
+</section>
+
+<section>
+<a name="ordered"></a>
+<h2> Contactos </h2>
+<i> Entre em contacto connosco através: </i>
+<ol>
+<li><u> Instagram: @andreia_neves_fotografia </u></li>
+<li><u> Facebook: Andreia Neves Fotografia </u></li>
+<li><u> E-mail: andreianevesfotografia@gmail.com </u></li>
+</ol>
+</section>
+
+<section>
+      <a name="color"></a>
+      <h2>Imagens</h2>
+      <p> Exemplos de imagens </p>
+      <img src =  "imagens/imagem 1.JPG" width="800" height="auto">
+      <img src="imagens/imagem 2.jpg" width="800" height="auto">
+
+      </section>
+
+<section>
+      <a name="video"></a>
+      <h2>Videos </h2>
+      <p>Pôr do sol na praia</p>
+      <video width="800" height="auto" controls>
+      <source src= "videos/video 1.MOV">
+      </video>
+
+           
+     </section>
+
+      <section>
+      <a name="table"></a>
+      <h2>Table Tags</h2>
+      <table border="1px">
+      <th colspan="3"> Heading </th> <tr>
+      <td> Column 1 </td> <td> Column 2 </td> <td> Column 3 </td> </tr>
+      <tr>
+      <td rowspan="4"> Cell Spanning in 3 Rows (2nd and 3rd merged) </td>
+      <td> 1st Cell </td> </tr>
+      <tr>
+      <td> 1st Cell </td> </tr>
+      <tr>
+      <td> 2nd Cell </td>
+      </tr> 
+      <tr>
+      <td> 3rd Cell </td> </tr>
+      <tr><td> 3rd Cell </td> </tr>
+      <tr><td> 4th Cell </td></tr> 
+      </table>
+</section>
+
+</div>
+
+<aside class="col-2">
+</p>
+<h3>Info</h3>
+<p>Esta zona serve para colocar informacao menos relevante </p>
+</aside>
+
+<footer>
+         <h2>Developed by Andreia Neves</h2>
+</footer>     
+<script>
+let menu_icon = document.querySelector('#menu_icon'); 
+let container = document.querySelector("#container"); 
+let drawer = document.querySelector('#drawer');
+menu_icon.addEventListener('click', function (e) {
+drawer.classList.toggle('open'); e.stopPropagation();
+});
+container.addEventListener('click', function () {
+drawer.classList.remove('open'); 
+});
+</script>
+</body>
+
+      <!---Content ends here -->
+</html>
